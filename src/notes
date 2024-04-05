@@ -37,3 +37,9 @@ Iske baad ek Layout banate hai jisase link click karne par change hota hai
           </li>
         </ul>
       </nav>
+
+Link ke jagah par navigate hooks
+
+id ka use
+url same but id diff
+route param 
