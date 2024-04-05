@@ -1,0 +1,39 @@
+1. Install react-router-dom version 6
+2. render the app component inside the BrowserRouter on index.js
+3. create your components that will be render on these routes.
+4. Using Routes and Route, We define our route.
+5. Each route takes a path prop, and an element prop.
+   The path prop determines, the url on which the route will be activated
+   the element prop determines the component that will be renderd when the route is active
+
+Iske baad ek Layout banate hai jisase link click karne par change hota hai
+
+6. Using the link Component, change the URLs using the "to" prop of the Link component
+
+(APNE SE STEP)
+
+1. Sabse pahle react router dom install karenge
+2. fir index.js BrowserRouter se enclose karenge jo ki RRD lib se aaya hai
+3. Ab navbar ka components banayenge
+4. Fir App.js me Routes, Route lo lekar aise karenge
+   <Routes>
+   <Route path="/" element={<Home />} />
+   <Route path="/contact" element={<Contact />} />
+   <Route path="/about" element={<About />} />
+   </Routes>
+
+5. Fir ek or component banayege <Layout> ke name se isme <nav> banayenge
+6. or fir <nav> me aise karenge
+<nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
